@@ -89,8 +89,8 @@
               </a>
         
               <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.html" class="nav-link px-2 link-secondary active"><i class="bi bi-house"></i> Home</a></li>
-                <li><a href="schedule.php" class="nav-link px-2 link-dark"><i class="bi bi-wallet"></i>  Schedule</a></li>
+                <li><a href="index.html" class="nav-link px-2 link-secondary"><i class="bi bi-house"></i> Home</a></li>
+                <li><a href="schedule.php" class="nav-link active px-2 link-dark"><i class="bi bi-wallet"></i>  Schedule</a></li>
                 <li><a href="about.html" class="nav-link px-2 link-dark"><i class="bi bi-exclamation-circle-fill"></i> About us</a></li>
               </ul>
         
@@ -101,62 +101,18 @@
             </header>
         </div>
 
-          <div class="container">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/swimm01.jpg" class="d-block w-100" alt="...">
-                    <div class="hero-text">
-                      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-                      <h1>NATATORIAL</h1>
-                      <p>Swimming classes</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/swimm02.jpg" class="d-block w-100" alt="...">
-                    <div class="hero-text">
-                      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-                      <h1>NATATORIAL</h1>
-                      <p>Swimming classes</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/swimm03.jpg" class="d-block w-100" alt="...">
-                    <div class="hero-text">
-                      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-                      <h1>NATATORIAL</h1>
-                      <p>Swimming classes</p>
-                    </div>
-                  </div>
-                </div>
+        <div class="container w-50">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
             </div>
-          </div>
+
+
+        </div>
+
           
-          <div class="container mt-3">
-            <div class="row row-cols-1 g-2">
-              <div class="col-sm-6">
-                <div class="card mb-3">
-                  <img src="img/swimm01.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-light" style="background-color: #46c6cc;">
-                    <h5 class="card-title"><i class="bi bi-calendar3"></i> Schedule your class</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                  </div>
-                </div>
-                
-              </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body text-light" style="background-color: #46c6cc;">
-                    <h5 class="card-title"><i class="bi bi-info-circle-fill"></i> About our classes</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                  </div>
-                  <img src="img/swimm02.jpg" class="card-img-bottom" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
     </body>
 
     <div class="container">
