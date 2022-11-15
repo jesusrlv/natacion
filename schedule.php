@@ -108,13 +108,6 @@
         <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
         <h2 class="text-center">Checkout form</h2>
             <p class="lead text-center">Section to pay for your scheduled swimming class.</p>
-            <!-- <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" aria-describedby="basic-addon1">
-                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
-                <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
-            </div> -->
-
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
@@ -133,7 +126,6 @@
 
                     <div class="input-group mb-3" id="hiddenDiv" hidden>
                       <span class="input-group-text" id="inputGroup-sizing-default"><i class="bi bi-clock-fill"></i></span>
-                      <!-- <input type="date" id="scheduleDate" name="" onblur="dateChange()" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
                       <select class="form-select" name="scheduleTime" id="scheduleTime" onchange="queryDate()" required>
                         <option value="">Select hour...</option>
                         <option value="9">9:00</option>
