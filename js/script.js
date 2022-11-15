@@ -4,14 +4,15 @@ function dateTime(){
 
 function queryDate(){
    
-  var dateS1= document.querySelector("[name='scheduleDate']").value;
-  var dateS2= document.querySelector("[name='scheduleTime']").value;
+  var dateS= document.querySelector("[name='scheduleDate']").value;
+  var dateT= document.querySelector("[name='scheduleTime']").value;
+  console.log(dateS);
         $.ajax({
                 type:"POST",
                 url:"prcd/date.php",
                 data:{
-                  dateS1:dateS1,
-                  dateS2:dateS2
+                  dateS:dateS,
+                  dateT:dateT
                 },
                 dataType: "html",
                 cache: false,
@@ -19,6 +20,5 @@ function queryDate(){
                     $("#scheduleId").html(data);                  
                   }               
                 });
-                
-
 }
+

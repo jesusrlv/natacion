@@ -134,21 +134,21 @@
                     <div class="input-group mb-3" id="hiddenDiv" hidden>
                       <span class="input-group-text" id="inputGroup-sizing-default"><i class="bi bi-clock-fill"></i></span>
                       <!-- <input type="date" id="scheduleDate" name="" onblur="dateChange()" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
-                      <select class="form-select" name="scheduleTime" id="scheduleTime" onselect="queryDate()" required>
+                      <select class="form-select" name="scheduleTime" id="scheduleTime" onchange="queryDate()" required>
                         <option value="">Select hour...</option>
-                        <option value="9:00">9:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:00">20:00</option>
-                        <option value="21:00">21:00</option>
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
                       </select>
                     </div>
                     <div id="scheduleId"></div>
@@ -198,37 +198,6 @@
                               Please enter your shipping address.
                             </div>
                           </div>
-
-                          <!-- <div class="col-md-5">
-                            <label for="country" class="form-label">Country</label>
-                            <select class="form-select" id="country" required>
-                              <option value="">Choose...</option>
-                              <option>United States</option>
-                            </select>
-                            <div class="invalid-feedback">
-                              Please select a valid country.
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <label for="state" class="form-label">State</label>
-                            <select class="form-select" id="state" required>
-                              <option value="">Choose...</option>
-                              <option>California</option>
-                            </select>
-                            <div class="invalid-feedback">
-                              Please provide a valid state.
-                            </div>
-                          </div>
-
-                          <div class="col-md-3">
-                            <label for="zip" class="form-label">Zip</label>
-                              <input type="text" class="form-control" id="zip" placeholder="" required>
-                              <div class="invalid-feedback">
-                                Zip code required.
-                              </div>
-                          </div> -->
-
                         </div>
                   </div>
                 </div>
@@ -297,7 +266,7 @@
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="flush-headingOne flush-headingTwo flush-collapseThree">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="flush-headingOne flush-headingTwo flush-collapseThree" id="btnCheckout" disabled>Continue to checkout</button>
         </form>
       </div>
 
