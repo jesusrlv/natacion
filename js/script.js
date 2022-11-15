@@ -1,5 +1,7 @@
 function dateTime(){
   document.getElementById("hiddenDiv").hidden = false;
+  document.getElementById("scheduleTime").value="";
+
 }
 
 function queryDate(){
