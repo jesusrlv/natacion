@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/ico.ico"/>
     <meta name="description" content="Natatorial.com">
     <meta name="author" content="Natatorial.com">
     <meta name="generator" content="Natatorial.com">
@@ -12,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -119,17 +121,20 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Schedule
                   </button>
+                  <form class="needs-validation">
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
+
                     <div class="input-group mb-3">
                       <span class="input-group-text" id="inputGroup-sizing-default"><i class="bi bi-calendar2-event-fill"></i></span>
-                      <input type="date" id="scheduleDate" name="scheduleDate" onblur="dateTime()" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      <input type="date" id="scheduleDate" name="scheduleDate" onchange="dateTime()" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
                     </div>
-                    <div class="input-group mb-3">
+
+                    <div class="input-group mb-3" id="hiddenDiv" hidden>
                       <span class="input-group-text" id="inputGroup-sizing-default"><i class="bi bi-clock-fill"></i></span>
                       <!-- <input type="date" id="scheduleDate" name="" onblur="dateChange()" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
-                      <select class="form-select" name="scheduleTime" id="scheduleTime">
+                      <select class="form-select" name="scheduleTime" id="scheduleTime" onselect="queryDate()" required>
                         <option value="">Select hour...</option>
                         <option value="9:00">9:00</option>
                         <option value="10:00">10:00</option>
@@ -151,80 +156,80 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
+                <h2 class="accordion-header border-bottom" id="flush-headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     Billing
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                  <div class="col-md-12 col-lg-12">
-                <h4 class="mb-3">Billing address</h4>
-                <form class="needs-validation" novalidate>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label for="firstName" class="form-label">First name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Valid first name is required.
-                      </div>
-                    </div>
+                    <div class="col-md-12 col-lg-12">
+                      <h4 class="mb-3">Billing address</h4>
 
-                    <div class="col-sm-6">
-                      <label for="lastName" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Valid last name is required.
-                      </div>
-                    </div>
+                        <div class="row g-3">
+                          <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Valid first name is required.
+                            </div>
+                          </div>
 
-                    <div class="col-12">
-                      <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                      <div class="invalid-feedback">
-                        Please enter a valid email address for shipping updates.
-                      </div>
-                    </div>
+                          <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Valid last name is required.
+                            </div>
+                          </div>
 
-                    <div class="col-12">
-                      <label for="address" class="form-label">Address</label>
-                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                      <div class="invalid-feedback">
-                        Please enter your shipping address.
-                      </div>
-                    </div>
+                          <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                              Please enter a valid email address for shipping updates.
+                            </div>
+                          </div>
 
-                    <div class="col-md-5">
-                      <label for="country" class="form-label">Country</label>
-                      <select class="form-select" id="country" required>
-                        <option value="">Choose...</option>
-                        <option>United States</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid country.
-                      </div>
-                    </div>
+                          <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                              Please enter your shipping address.
+                            </div>
+                          </div>
 
-                    <div class="col-md-4">
-                      <label for="state" class="form-label">State</label>
-                      <select class="form-select" id="state" required>
-                        <option value="">Choose...</option>
-                        <option>California</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please provide a valid state.
-                      </div>
-                    </div>
+                          <!-- <div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required>
+                              <option value="">Choose...</option>
+                              <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please select a valid country.
+                            </div>
+                          </div>
 
-                    <div class="col-md-3">
-                      <label for="zip" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="zip" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Zip code required.
-                      </div>
-                    </div>
-                  </div>
+                          <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required>
+                              <option value="">Choose...</option>
+                              <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please provide a valid state.
+                            </div>
+                          </div>
 
+                          <div class="col-md-3">
+                            <label for="zip" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="zip" placeholder="" required>
+                              <div class="invalid-feedback">
+                                Zip code required.
+                              </div>
+                          </div> -->
+
+                        </div>
                   </div>
                 </div>
               </div>
@@ -292,7 +297,7 @@
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="flush-headingOne flush-headingTwo flush-collapseThree">Continue to checkout</button>
         </form>
       </div>
 
