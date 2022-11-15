@@ -15,7 +15,6 @@
 
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
 
     <style>
       .bd-placeholder-img {
@@ -121,33 +120,7 @@
                   </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="inputGroup-sizing-default"><i class="bi bi-calendar2-event-fill"></i></span>
-                      <input type="date" id="scheduleDate" name="scheduleDate" onblur="dateTime()" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                    </div>
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="inputGroup-sizing-default"><i class="bi bi-clock-fill"></i></span>
-                      <!-- <input type="date" id="scheduleDate" name="" onblur="dateChange()" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
-                      <select class="form-select" name="scheduleTime" id="scheduleTime">
-                        <option value="">Select hour...</option>
-                        <option value="9:00">9:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:00">20:00</option>
-                        <option value="21:00">21:00</option>
-                      </select>
-                    </div>
-                    <div id="scheduleId"></div>
-                  </div>
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -157,75 +130,7 @@
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                  <div class="col-md-12 col-lg-12">
-                <h4 class="mb-3">Billing address</h4>
-                <form class="needs-validation" novalidate>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label for="firstName" class="form-label">First name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Valid first name is required.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="lastName" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Valid last name is required.
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                      <div class="invalid-feedback">
-                        Please enter a valid email address for shipping updates.
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="address" class="form-label">Address</label>
-                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                      <div class="invalid-feedback">
-                        Please enter your shipping address.
-                      </div>
-                    </div>
-
-                    <div class="col-md-5">
-                      <label for="country" class="form-label">Country</label>
-                      <select class="form-select" id="country" required>
-                        <option value="">Choose...</option>
-                        <option>United States</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid country.
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <label for="state" class="form-label">State</label>
-                      <select class="form-select" id="state" required>
-                        <option value="">Choose...</option>
-                        <option>California</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please provide a valid state.
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <label for="zip" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="zip" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Zip code required.
-                      </div>
-                    </div>
-                  </div>
-
-                  </div>
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -235,64 +140,146 @@
                   </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                  <h4 class="mb-3">Payment</h4>
-
-                  <div class="my-3">
-                    <div class="form-check">
-                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                      <label class="form-check-label" for="credit">Credit card</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                      <label class="form-check-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                      <label class="form-check-label" for="paypal">PayPal</label>
-                    </div>
-                  </div>
-
-                  <div class="row gy-3">
-                    <div class="col-md-6">
-                      <label for="cc-name" class="form-label">Name on card</label>
-                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                      <small class="text-muted">Full name as displayed on card</small>
-                      <div class="invalid-feedback">
-                        Name on card is required
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="cc-number" class="form-label">Credit card number</label>
-                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Credit card number is required
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <label for="cc-expiration" class="form-label">Expiration</label>
-                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Expiration date required
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <label for="cc-cvv" class="form-label">CVV</label>
-                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Security code required
-                      </div>
-                    </div>
-                  </div>
-                  </div>
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                 </div>
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit">Continue to checkout</button>
+        <div class="col-md-12 col-lg-12">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <!-- <div class="col-12">
+              <label for="username" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
         </form>
       </div>
 
