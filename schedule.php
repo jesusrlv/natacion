@@ -159,19 +159,20 @@
                       <h4 class="mb-3">Billing address</h4>
 
                         <div class="row g-3">
-                          <div class="col-sm-6">
-                            <label for="firstName" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                              Valid first name is required.
-                            </div>
-                          </div>
-
+                          
                           <div class="col-sm-6">
                             <label for="lastName" class="form-label">Last name</label>
                             <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                               Valid last name is required.
+                            </div>
+                          </div>
+
+                          <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Valid first name is required.
                             </div>
                           </div>
 
@@ -239,7 +240,7 @@
 
                     <div class="col-md-3">
                       <label for="cc-expiration" class="form-label">Expiration</label>
-                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                      <input type="month" min="2018-03" class="form-control" id="cc-expiration" placeholder="" required>
                       <div class="invalid-feedback">
                         Expiration date required
                       </div>
@@ -258,14 +259,11 @@
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="flush-headingOne flush-headingTwo flush-collapseThree" id="btnCheckout" disabled>Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit" data-bs-toggle="modal" data-bs-target="#infoCheck" id="btnCheckout" onclick="reservation()" disabled>Continue to checkout</button>
         </form>
       </div>
 
         </div>
-
-        
-
           
     </body>
 
@@ -285,6 +283,34 @@
       </footer>
     </div>
 
-    
-
     </html>
+
+    <!-- modal -->
+
+    <div class="modal fade" id="infoCheck" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-credit-card-fill"></i> About reservation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4><i class="bi bi-info-circle"></i> Information</h4>
+        <hr class="w-50">
+        <p><strong>Date:</strong> <span id="dateInf"></span> <strong>Hour:</strong> <span id="hourInf"></span>hs</p>
+        <p><strong>Last name:</strong> <span id="lastInf"></span> <strong>First name:</strong> <span id="firstInf"></span></p>
+        <p><strong>Email:</strong> <span id="emailInf"></span></p>
+        <p><strong>Address:</strong> <span id="addressInf"></span></p>
+        <hr>
+        <p><strong>Type of card:</strong> <span id="adresslInf"></span></p>
+        <p><strong>Name of card:</strong> <span id="ccInf"></span></p>
+        <p><strong>Number of card:</strong> <span id="ccnumber"></span></p>
+        <p><strong>Expiration card:</strong> <span id="addresslInf"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Make reservation</button>
+      </div>
+    </div>
+  </div>
+</div>
