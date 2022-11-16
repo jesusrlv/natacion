@@ -261,9 +261,14 @@
                       </div>
                     </div>
                   </div>
+                  
                   </div>
+                  <div class="d-grid gap-2 mb-2">
+                      <button class="btn btn-primary" type="button">Next</button>
+                    </div>
                   
                 </div>
+                
               </div>
             </div>
 
