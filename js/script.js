@@ -1,5 +1,57 @@
+function validarInputs(){
+
+  var inp1 = 0;
+  var inp2 = 0;
+  var inp3 = 0;
+  var inp4 = 0;
+
+inp1 = document.getElementById('firstName').value;
+inp2 = document.getElementById('lastName').value;
+inp3 = document.getElementById('email').value;
+inp4 = document.getElementById('address').value;
+
+console.log(inp1);
+console.log(inp2);
+console.log(inp3);
+console.log(inp4);
+
+if((inp1 == null) && (inp2 == null) && (inp3 == null) && (inp4 == null)){
+  document.getElementById("button2").disabled = true;
+}
+else{
+  document.getElementById("button2").disabled = false;
+
+}
+}
+// }
+// if(inp2 == "" || inp2 == null){
+//   var x2 = 0;
+// }
+// else{
+//   x2 = 1;
+// }
+// if(inp3 == "" || inp3 == null){
+//   var x3 = 0;
+// }
+// else{
+//   x3 = 1;
+// }
+// if(inp4 == "" || inp4 == null){
+//   var x4 = 0;
+// }
+// else{
+//   x4 = 1;
+// }
+
+// var suma = x1 + x2 + x3 + x4;
+
+// if(suma = 5){
+//   document.getElementById("button2").disabled = false;
+// }
+
 function dateTime(){
   document.getElementById("hiddenDiv").hidden = false;
+  document.getElementById("button1").disabled = true;
   document.getElementById("scheduleTime").value="";
 
 }

@@ -14,7 +14,7 @@ $no_resultados = mysqli_num_rows($resultSql);
             Date no available!
         </div>
         <script>
-        document.getElementById("btnCheckout").disabled = true;
+        document.getElementById("button1").disabled = true;
         </script>
       
         ';
@@ -32,7 +32,7 @@ $no_resultados = mysqli_num_rows($resultSql);
             </div>
         </div>
         <script>
-        document.getElementById("btnCheckout").disabled = false;
+        document.getElementById("button1").disabled = false;
         </script>
         ';
     }

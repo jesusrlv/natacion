@@ -146,13 +146,13 @@
                     <div id="scheduleId"></div>
                   </div>
                     <div class="d-grid gap-2 mb-2">
-                      <button class="btn btn-primary" type="button">Next</button>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" id="button1" disabled>Next</button>
                     </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header border-bottom" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse" aria-expanded="false" aria-controls="flush-collapseTwo">
                     Billing
                   </button>
                 </h2>
@@ -165,7 +165,7 @@
                           
                           <div class="col-sm-6">
                             <label for="lastName" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" onchange="validarInputs()" required>
                             <div class="invalid-feedback">
                               Valid last name is required.
                             </div>
@@ -173,7 +173,7 @@
 
                           <div class="col-sm-6">
                             <label for="firstName" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" onchange="validarInputs()" required>
                             <div class="invalid-feedback">
                               Valid first name is required.
                             </div>
@@ -181,7 +181,7 @@
 
                           <div class="col-12">
                             <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" onchange="validarInputs()">
                             <div class="invalid-feedback">
                               Please enter a valid email address for shipping updates.
                             </div>
@@ -189,7 +189,7 @@
 
                           <div class="col-12">
                             <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" onchange="validarInputs()" required>
                             <div class="invalid-feedback">
                               Please enter your shipping address.
                             </div>
@@ -198,13 +198,13 @@
                   </div>
                 </div>
                 <div class="d-grid gap-2 mb-2">
-                      <button class="btn btn-primary" type="button">Next</button>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" id="button2" disabled>Next</button>
                     </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse" aria-expanded="false" aria-controls="flush-collapseThree">
                     Payment
                   </button>
                 </h2>
@@ -264,7 +264,7 @@
                   
                   </div>
                   <div class="d-grid gap-2 mb-2">
-                      <button class="btn btn-primary" type="button">Next</button>
+                      <button class="btn btn-primary" type="button" id="button3" disabled>Next</button>
                     </div>
                   
                 </div>
