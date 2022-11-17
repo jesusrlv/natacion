@@ -189,7 +189,7 @@
 
                           <div class="col-12">
                             <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" onchange="validarInputs()" required>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" onchange="validarInputs()" onkeypress="validarInputs()" required>
                             <div class="invalid-feedback">
                               Please enter your shipping address.
                             </div>
@@ -214,15 +214,15 @@
 
                   <div class="my-3">
                     <div class="form-check">
-                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked>
                       <label class="form-check-label" for="credit">Credit card</label>
                     </div>
                     <div class="form-check">
-                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input">
                       <label class="form-check-label" for="debit">Debit card</label>
                     </div>
                     <div class="form-check">
-                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input">
                       <label class="form-check-label" for="paypal">PayPal</label>
                     </div>
                   </div>
@@ -230,7 +230,7 @@
                   <div class="row gy-3">
                     <div class="col-md-6">
                       <label for="cc-name" class="form-label">Name on card</label>
-                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                      <input type="text" class="form-control" id="cc-name" placeholder="" required onchange="validarInputs2()">
                       <small class="text-muted">Full name as displayed on card</small>
                       <div class="invalid-feedback">
                         Name on card is required
@@ -239,7 +239,7 @@
 
                     <div class="col-md-6">
                       <label for="cc-number" class="form-label">Credit card number</label>
-                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                      <input type="text" class="form-control" id="cc-number" placeholder="" requiredv onchange="validarInputs2()">
                       <div class="invalid-feedback">
                         Credit card number is required
                       </div>
@@ -247,7 +247,7 @@
 
                     <div class="col-md-3">
                       <label for="cc-expiration" class="form-label">Expiration</label>
-                      <input type="month" min="2018-03" class="form-control" id="cc-expiration" placeholder="" required>
+                      <input type="month" min="2018-03" class="form-control" id="cc-expiration" placeholder="" required onchange="validarInputs2()">
                       <div class="invalid-feedback">
                         Expiration date required
                       </div>
@@ -255,7 +255,7 @@
 
                     <div class="col-md-3">
                       <label for="cc-cvv" class="form-label">CVV</label>
-                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required onchange="validarInputs2()" onkeypress="validarInputs2()">
                       <div class="invalid-feedback">
                         Security code required
                       </div>
@@ -264,7 +264,7 @@
                   
                   </div>
                   <div class="d-grid gap-2 mb-2">
-                      <button class="btn btn-primary" type="button" id="button3" disabled>Next</button>
+                      <button class="btn btn-primary" type="button" id="button3" disabled onclick="checkOut()">Next</button>
                     </div>
                   
                 </div>
@@ -272,7 +272,7 @@
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg mt-5" type="submit" data-bs-toggle="modal" data-bs-target="#infoCheck" id="btnCheckout" onclick="reservation()" disabled>Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg mt-5" type="button" data-bs-toggle="modal" data-bs-target="#infoCheck" id="btnCheckout" onclick="reservation()" disabled>Continue to checkout</button>
         </form>
       </div>
 

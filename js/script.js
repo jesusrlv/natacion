@@ -10,11 +10,6 @@ inp2 = document.getElementById('lastName');
 inp3 = document.getElementById('email');
 inp4 = document.getElementById('address');
 
-console.log(inp1);
-console.log(inp2);
-console.log(inp3);
-console.log(inp4);
-
 if((inp1.value.length > 0) && (inp2.value.length > 0) && (inp3.value.length > 0) && (inp4.value.length > 0)){
   document.getElementById("button2").disabled = false;
 }
@@ -22,31 +17,36 @@ else {
   document.getElementById("button2").disabled = true;
 }
 }
-// }
-// if(inp2 == "" || inp2 == null){
-//   var x2 = 0;
-// }
-// else{
-//   x2 = 1;
-// }
-// if(inp3 == "" || inp3 == null){
-//   var x3 = 0;
-// }
-// else{
-//   x3 = 1;
-// }
-// if(inp4 == "" || inp4 == null){
-//   var x4 = 0;
-// }
-// else{
-//   x4 = 1;
-// }
 
-// var suma = x1 + x2 + x3 + x4;
+function dateTime(){
+  document.getElementById("hiddenDiv").hidden = false;
+  document.getElementById("button1").disabled = true;
+  document.getElementById("scheduleTime").value="";
 
-// if(suma = 5){
-//   document.getElementById("button2").disabled = false;
-// }
+}
+function validarInputs2(){
+
+  var inp5 = 0;
+  var inp6 = 0;
+  var inp7 = 0;
+  var inp8 = 0;
+
+inp5 = document.getElementById('cc-name');
+inp6 = document.getElementById('cc-number');
+inp7 = document.getElementById('cc-expiration');
+inp8 = document.getElementById('cc-cvv');
+
+if((inp5.value.length > 0) && (inp6.value.length > 0) && (inp7.value.length > 0) && (inp8.value.length > 0)){
+  document.getElementById("button3").disabled = false;
+}
+else {
+  document.getElementById("button3").disabled = true;
+}
+}
+
+function checkOut(){
+  document.getElementById("btnCheckout").disabled = false;
+}
 
 function dateTime(){
   document.getElementById("hiddenDiv").hidden = false;
@@ -97,7 +97,7 @@ function reservation(){
     var namecc = document.getElementById('cc-name').value;
     document.getElementById('ccInf').innerHTML = namecc;
 
-    var namecc = document.getElementById('cc-number').value;
-    document.getElementById('ccnumber').innerHTML = namecc;
+    var numbercc = document.getElementById('cc-number').value;
+    document.getElementById('ccnumber').innerHTML = numbercc;
 
 }
