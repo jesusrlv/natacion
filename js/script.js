@@ -5,22 +5,21 @@ function validarInputs(){
   var inp3 = 0;
   var inp4 = 0;
 
-inp1 = document.getElementById('firstName').value;
-inp2 = document.getElementById('lastName').value;
-inp3 = document.getElementById('email').value;
-inp4 = document.getElementById('address').value;
+inp1 = document.getElementById('firstName');
+inp2 = document.getElementById('lastName');
+inp3 = document.getElementById('email');
+inp4 = document.getElementById('address');
 
 console.log(inp1);
 console.log(inp2);
 console.log(inp3);
 console.log(inp4);
 
-if((inp1 == null) && (inp2 == null) && (inp3 == null) && (inp4 == null)){
-  document.getElementById("button2").disabled = true;
-}
-else{
+if((inp1.value.length > 0) && (inp2.value.length > 0) && (inp3.value.length > 0) && (inp4.value.length > 0)){
   document.getElementById("button2").disabled = false;
-
+}
+else {
+  document.getElementById("button2").disabled = true;
 }
 }
 // }
