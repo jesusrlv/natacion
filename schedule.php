@@ -211,8 +211,9 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                   <h4 class="mb-3">Payment</h4>
+                  <h6 class="mb-3">You can upload your file with your proof of payment</h6>
 
-                  <div class="my-3">
+                  <!-- <div class="my-3">
                     <div class="form-check">
                       <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked>
                       <label class="form-check-label" for="credit">Credit card</label>
@@ -225,10 +226,10 @@
                       <input id="paypal" name="paymentMethod" type="radio" class="form-check-input">
                       <label class="form-check-label" for="paypal">PayPal</label>
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="row gy-3">
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                       <label for="cc-name" class="form-label">Name on card</label>
                       <input type="text" class="form-control" id="cc-name" placeholder="" required onchange="validarInputs2()">
                       <small class="text-muted">Full name as displayed on card</small>
@@ -259,7 +260,12 @@
                       <div class="invalid-feedback">
                         Security code required
                       </div>
+                    </div> -->
+                    <div class="input-group mb-3">
+                      <label class="input-group-text" for="inputGroupFile01"><i class="bi bi-folder-plus"></i></label>
+                      <input type="file" class="form-control" id="inputGroupFile01">
                     </div>
+
                   </div>
                   
                   </div>
