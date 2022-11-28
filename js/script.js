@@ -26,22 +26,30 @@ function dateTime(){
 }
 function validarInputs2(){
 
-  var inp5 = 0;
-  var inp6 = 0;
-  var inp7 = 0;
-  var inp8 = 0;
+var valor = document.getElementById("fileSwimm").value;
 
-inp5 = document.getElementById('cc-name');
-inp6 = document.getElementById('cc-number');
-inp7 = document.getElementById('cc-expiration');
-inp8 = document.getElementById('cc-cvv');
-
-if((inp5.value.length > 0) && (inp6.value.length > 0) && (inp7.value.length > 0) && (inp8.value.length > 0)){
+if(valor !== "" || valor !== NULL){
   document.getElementById("button3").disabled = false;
 }
-else {
+else{
   document.getElementById("button3").disabled = true;
 }
+//   var inp5 = 0;
+//   var inp6 = 0;
+//   var inp7 = 0;
+//   var inp8 = 0;
+
+// inp5 = document.getElementById('cc-name');
+// inp6 = document.getElementById('cc-number');
+// inp7 = document.getElementById('cc-expiration');
+// inp8 = document.getElementById('cc-cvv');
+
+// if((inp5.value.length > 0) && (inp6.value.length > 0) && (inp7.value.length > 0) && (inp8.value.length > 0)){
+//   document.getElementById("button3").disabled = false;
+// }
+// else {
+//   document.getElementById("button3").disabled = true;
+// }
 }
 
 function checkOut(){

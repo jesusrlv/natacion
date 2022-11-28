@@ -263,7 +263,7 @@
                     </div> -->
                     <div class="input-group mb-3">
                       <label class="input-group-text" for="inputGroupFile01"><i class="bi bi-folder-plus"></i></label>
-                      <input type="file" class="form-control" id="inputGroupFile01">
+                      <input type="file" class="form-control" id="fileSwimm" onchange="validarInputs2()">
                     </div>
 
                   </div>
