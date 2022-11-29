@@ -138,7 +138,7 @@ function reservation(){
     var email = document.getElementById('email').value;
     var address = document.getElementById('address').value;
     var data=getFiles();
-    data=getFormData("miForm",data);
+    data = getFormData("formSchedule",data);
  
     // var filter= document.querySelector("[name='filter']").value;
     // var filtro= document.querySelector("[name='filtro']").value;
@@ -147,15 +147,19 @@ function reservation(){
           $.ajax({
                   type:"POST",
                   url:"prcd/save.php",
-                  data:{
-                    date:date,
-                    hour:hour,
-                    last:last,
-                    first:first,
-                    email:email,
-                    address:address
-                  },
-                  dataType: "html",
+                  // data:{
+                  //   date:date,
+                  //   hour:hour,
+                  //   last:last,
+                  //   first:first,
+                  //   email:email,
+                  //   address:address
+                  // },
+                  data:data,
+                  dataType:"json",
+                  // dataType: "html",
+                  contentType:false,
+                  processData:false,
                   cache: false,
                     success: function(data) {
                       // $("#txtHint").html(data);    
