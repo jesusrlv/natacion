@@ -137,6 +137,8 @@ function reservation(){
     var first = document.getElementById('firstName').value;
     var email = document.getElementById('email').value;
     var address = document.getElementById('address').value;
+    var data=getFiles();
+    data=getFormData("miForm",data);
  
     // var filter= document.querySelector("[name='filter']").value;
     // var filtro= document.querySelector("[name='filtro']").value;
