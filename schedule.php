@@ -314,21 +314,27 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h4><i class="bi bi-info-circle"></i> Information</h4>
-        <hr class="w-50">
-        <p><strong>Date:</strong> <span id="dateInf"></span> <strong>Hour:</strong> <span id="hourInf"></span>hs</p>
-        <p><strong>Last name:</strong> <span id="lastInf"></span> <strong>First name:</strong> <span id="firstInf"></span></p>
-        <p><strong>Email:</strong> <span id="emailInf"></span></p>
-        <p><strong>Address:</strong> <span id="addressInf"></span></p>
-        <hr>
-        <p><strong>Type of card:</strong> <span id="adresslInf"></span></p>
+        
+        <div class="card text-bg-primary mb-3" style="width: 100%;">
+          <div class="card-header pt-3"><h4><i class="bi bi-info-circle"></i> Information</h4></div>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Primary card title</h5> -->
+            <p class="card-text">
+            <p><strong>Date:</strong> <span id="dateInf"></span> <strong>Hour:</strong> <span id="hourInf"></span>hs</p>
+                <p><strong>Last name:</strong> <span id="lastInf"></span> <strong>First name:</strong> <span id="firstInf"></span></p>
+                <p><strong>Email:</strong> <span id="emailInf"></span></p>
+                <p><strong>Address:</strong> <span id="addressInf"></span></p>  
+            </p>
+          </div>
+        </div>
+        <!-- <p><strong>Type of card:</strong> <span id="adresslInf"></span></p>
         <p><strong>Name of card:</strong> <span id="ccInf"></span></p>
         <p><strong>Number of card:</strong> <span id="ccnumber"></span></p>
-        <p><strong>Expiration card:</strong> <span id="addresslInf"></span></p>
+        <p><strong>Expiration card:</strong> <span id="addresslInf"></span></p> -->
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Make reservation</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i> Close</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-check-circle-fill"></i> Confirm reservation</button>
       </div>
     </div>
   </div>
