@@ -1,48 +1,44 @@
-<html>
-<meta charset="utf-8">
-    <header>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </header>
-<body>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
-    body{
-        font-family: 'Montserrat', sans-serif;
-    }
-</style>
-    
 <?php
 include('qc.php');
+date_default_timezone_set('America/Mexico_City');
+                  setlocale(LC_TIME, 'es_MX.UTF-8');
 
-$date = $_POST['date'];
-$hour = $_POST['hour'];
-$last = $_POST['last'];
-$first = $_POST['first'];
+$date = $_POST['scheduleDate'];
+$hour = $_POST['scheduleTime'];
+$last = $_POST['lastname'];
+$first = $_POST['firtsname'];
 $email = $_POST['email'];
 $address = $_POST['address'];
+$fecha_sistema = strftime("%Y-%m-%d,%H:%M:%S");
+$annio = substr($fecha_sistema, 0, 4);
+$mes = substr($fecha_sistema, 5, 2); 
 
-$sql = "INSERT INTO agenda(fecha_reserva,hora,apellido,nombre,email,domicilio) VALUES('$date','$hour','$last','$first','$email','$address')";
-$resultado= $conn->query($sql);
+$fileName = $_FILES["file1"]["name"]; // The file name
+$fileTmpLoc = $_FILES["file1"]["tmp_name"]; // File in the PHP tmp folder
+$fileType = $_FILES["file1"]["type"]; // The type of file it is
+$fileSize = $_FILES["file1"]["size"]; // File size in bytes
+$fileErrorMsg = $_FILES["file1"]["error"]; // 0 for false... and 1 for true
+if (!$fileTmpLoc) { // if file not chosen
+    echo "ERROR: Please browse for a file before clicking the upload button.";
+    exit();
+}
 
+$archivo_ext=$_FILES['file1']['name'];
+$extension = pathinfo($archivo_ext, PATHINFO_EXTENSION);
 
-if($resultado){
+    if(move_uploaded_file($_FILES["file1"]["tmp_name"],"../docs/". $annio .'_'. $mes .'_'.$last.'_'.$first.'.'.$extension)){
+    // echo "$fileName carga completa";
     
-    echo "<script type=\"text/javascript\">
-    Swal.fire({
-        icon: 'success',
-        imageUrl: '../assets/brand/img/logo_store_shoes_sin_fondo.png',
-        imageHeight: 200,
-        imageAlt: 'Natatorial',
-        title: 'Done!',
-        text: 'Your reservation it's done!',
-        confirmButtonColor: '#3085d6',
-        footer: 'Natatorial'
-    }).then(function(){window.location='../schedule.php';});</script>";
-    }
-    else{
-    echo 'No se registró la actividad';
-    }
-
+    $ruta = "docs/". $annio .'_'. $mes .'_'.$last.'_'.$first.'.'.$extension;
+    // $sqlinsert= "UPDATE documentos SET link4='$ruta_pptx' WHERE id_usr='$curp'";
+    // $sqlinsert= "INSERT INTO docs (id_ext,ruta,tipo_doc,fecha_agregado,validacion) 
+    // VALUES('$id','$ruta','$tipo_doc','$fecha_sistema','$validacion')";
+    // $resultado2= $conn->query($sqlinsert);
+    $sql = "INSERT INTO agenda(fecha_reserva,hora,apellido,nombre,email,domicilio,ruta) VALUES('$date','$hour','$last','$first','$email','$address','$ruta')";
+    $resultado= $conn->query($sql);
+    
+    
+} else {
+    echo "move_uploaded_file function failed";
+}
 ?>
-
-</html>

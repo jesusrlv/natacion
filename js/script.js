@@ -131,14 +131,15 @@ function reservation(){
           // });
 
   function submitReservation(){
-    var date = document.getElementById('scheduleDate').value;
-    var hour = document.getElementById('scheduleTime').value;
-    var last = document.getElementById('lastName').value;
-    var first = document.getElementById('firstName').value;
-    var email = document.getElementById('email').value;
-    var address = document.getElementById('address').value;
-    var data=getFiles();
-    data = getFormData("formSchedule",data);
+    // var date = document.getElementById('scheduleDate').value;
+    // var hour = document.getElementById('scheduleTime').value;
+    // var last = document.getElementById('lastName').value;
+    // var first = document.getElementById('firstName').value;
+    // var email = document.getElementById('email').value;
+    // var address = document.getElementById('address').value;
+    // var data=getFiles();
+    // data = getFormData("formSchedule",data);
+    var formData = new FormData(document.getElementById("formSchedule"));
  
     // var filter= document.querySelector("[name='filter']").value;
     // var filtro= document.querySelector("[name='filtro']").value;
@@ -155,9 +156,8 @@ function reservation(){
                   //   email:email,
                   //   address:address
                   // },
-                  data:data,
-                  dataType:"json",
-                  // dataType: "html",
+                  data:formData,
+                  dataType: "html",
                   contentType:false,
                   processData:false,
                   cache: false,

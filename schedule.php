@@ -165,7 +165,7 @@
                           
                           <div class="col-sm-6">
                             <label for="lastName" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" onchange="validarInputs()" required>
+                            <input type="text" class="form-control" name="lastname" id="lastName" placeholder="" value="" onchange="validarInputs()" required>
                             <div class="invalid-feedback">
                               Valid last name is required.
                             </div>
@@ -173,7 +173,7 @@
 
                           <div class="col-sm-6">
                             <label for="firstName" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" onchange="validarInputs()" required>
+                            <input type="text" class="form-control" name="firtsname" id="firstName" placeholder="" value="" onchange="validarInputs()" required>
                             <div class="invalid-feedback">
                               Valid first name is required.
                             </div>
@@ -181,7 +181,7 @@
 
                           <div class="col-12">
                             <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" onchange="validarInputs()">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" onchange="validarInputs()">
                             <div class="invalid-feedback">
                               Please enter a valid email address for shipping updates.
                             </div>
@@ -189,7 +189,7 @@
 
                           <div class="col-12">
                             <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" onchange="validarInputs()" onkeypress="validarInputs()" required>
+                            <input type="text" class="form-control" name="address" id="address" placeholder="1234 Main St" onchange="validarInputs()" onkeypress="validarInputs()" required>
                             <div class="invalid-feedback">
                               Please enter your shipping address.
                             </div>
@@ -263,7 +263,7 @@
                     </div> -->
                     <div class="input-group mb-3">
                       <label class="input-group-text" for="inputGroupFile01"><i class="bi bi-folder-plus"></i></label>
-                      <input type="file" class="form-control" id="fileSwimm" onchange="validarInputs2()">
+                      <input type="file" class="form-control" id="fileSwimm" name="file1" onchange="validarInputs2()">
                     </div>
 
                   </div>
