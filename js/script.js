@@ -109,3 +109,68 @@ function reservation(){
     document.getElementById('ccnumber').innerHTML = numbercc;
 
 }
+// submit
+
+          // $(document).ready(function(){
+          // var form=$("#form1");
+          // $("#form1").submit(function(event){
+          // $.ajax({
+          //         type:"POST",
+          //         url:"prcd/filtro.php",
+          //         data:form.serialize(),
+          //         dataType: "html",
+          //         // async:false,
+          //         cache: false,
+          //           success: function(data) {
+          //             $("#txtHint").html(data);                  
+          //           }               
+          //         });
+                  
+          //         event.preventDefault();
+          // });
+          // });
+
+  function submitReservation(){
+    var date = document.getElementById('scheduleDate').value;
+    var hour = document.getElementById('scheduleTime').value;
+    var last = document.getElementById('lastName').value;
+    var first = document.getElementById('firstName').value;
+    var email = document.getElementById('email').value;
+    var address = document.getElementById('address').value;
+ 
+    // var filter= document.querySelector("[name='filter']").value;
+    // var filtro= document.querySelector("[name='filtro']").value;
+    // var talla= document.querySelector("[name='talla']").value;
+         
+          $.ajax({
+                  type:"POST",
+                  url:"prcd/save.php",
+                  data:{
+                    date:date,
+                    hour:hour,
+                    last:last,
+                    first:first,
+                    email:email,
+                    address:address
+                  },
+                  dataType: "html",
+                  cache: false,
+                    success: function(data) {
+                      // $("#txtHint").html(data);    
+                      // alert("Reservation Done!")     
+                      Swal.fire({
+                        icon: 'success',
+                        imageUrl: '../assets/brand/img/logo_store_shoes_sin_fondo.png',
+                        imageHeight: 200,
+                        imageAlt: 'Natatorial',
+                        title: 'Done!',
+                        text: 'Your reservation its done!',
+                        confirmButtonColor: '#3085d6',
+                        footer: 'Natatorial.com'
+                    }).then(function(){window.location='schedule.php';});         
+                    }               
+                  });
+                  
+                  event.preventDefault();
+
+        }

@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -99,7 +100,6 @@
         
               <div class="col-md-3 text-end">
                 <button type="button" class="btn btn-outline-dark me-2">Login</button>
-                <button type="button" class="btn btn-dark">Sign-up</button>
               </div>
             </header>
         </div>
@@ -334,7 +334,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i> Close</button>
-        <button type="button" class="btn btn-primary"><i class="bi bi-check-circle-fill"></i> Confirm reservation</button>
+        <button type="button" class="btn btn-primary" onclick="submitReservation()"><i class="bi bi-check-circle-fill"></i> Confirm reservation</button>
       </div>
     </div>
   </div>
