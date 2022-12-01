@@ -143,7 +143,7 @@
           <?php
           include ('prcd/query.php');
           $x = 0;
-           while($row_sqlInv = $sqlResultToday->fetch_assoc()){
+           while($row_sqlInv = $resultadoBusqueda->fetch_assoc()){
             $x++;
             echo'<tr>';
                 echo'<td class="text-center">'.$x.'</td>';
@@ -196,7 +196,7 @@
           <?php
           include ('prcd/query.php');
           $x = 0;
-           while($row_sqlInv2 = $sqlResultToday2->fetch_assoc()){
+           while($row_sqlInv2 = $resultadoBusqueda2->fetch_assoc()){
             $x++;
             echo'<tr>';
                 echo'<td class="text-center">'.$x.'</td>';
