@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="img/ico.ico"/>
+    <link rel="icon" type="image/png" href="img/icono.ico"/>
     <meta name="description" content="Natatorial.com">
     <meta name="author" content="Natatorial.com">
     <meta name="generator" content="Natatorial.com">
@@ -71,6 +71,10 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .grayscale {
+        filter: grayscale(100%);
+      }
     </style>
 
     
@@ -105,7 +109,8 @@
         </div>
 
         <div class="container w-50">
-        <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <img class="d-block mx-auto mb-4" src="img/natatorial_logo.png" alt="" width="150" height="140">
+        <!-- <img src="img/natatorial_logo.png" width="270" height="250" role="img" alt=""> -->
         <h2 class="text-center">Checkout form</h2>
             <p class="lead text-center">Section to pay for your scheduled swimming class.</p>
             <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -291,7 +296,9 @@
         <p class="col-md-4 mb-0 text-muted">&copy; 2022 Natatorial.com</p>
     
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
+          <img class="d-block mx-auto mb-4 grayscale" src="img/natatorial_logo.png" alt="" width="32" height="32">
+          
         </a>
     
         <ul class="nav col-md-4 justify-content-end">
