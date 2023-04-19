@@ -47,6 +47,7 @@ body{
 
   /* nav bar */
 
+  
   .navbar-brand.azul{
     color: #000000;
   }
@@ -61,14 +62,15 @@ body{
     color: #000000;
   }
   .navscroll {
-    background-color:rgba(0, 0, 0, 0.0);
+    background-color: #5fd1de;
+    /* background-color:rgba(0, 0, 0, 0.0); */
     color:yellow;
     transition:background-color 500ms, color 500ms;
     text-decoration: none;
 }
 
 .navscroll.azul {
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(207, 231, 233, 0.7);
     color:white;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }

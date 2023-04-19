@@ -58,14 +58,14 @@
         fill: currentColor;
       }
 
-      .nav-scroller {
+      /* .nav-scroller {
         position: relative;
         z-index: 2;
         height: 2.75rem;
         overflow-y: hidden;
-      }
+      } */
 
-      .nav-scroller .nav {
+      /* .nav-scroller .nav {
         display: flex;
         flex-wrap: nowrap;
         padding-bottom: 1rem;
@@ -74,7 +74,7 @@
         text-align: center;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-      }
+      } */
 
       .btn-bd-primary {
         --bd-violet-bg: #712cf9;
@@ -137,7 +137,7 @@
 
     
 <header data-bs-theme="dark" style="box-shadow: 5px 10px 18px #3d3d3d;">
-  <nav class="navscroll navbar navbar-expand-md navbar-info fixed-top shadow-sm bg-info">
+  <nav class="navscroll navbar navbar-expand-md  fixed-top shadow-sm">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">Carousel</a> -->
       <a href="/" class="navbar-brand">
@@ -160,7 +160,7 @@
         </ul>
         <!-- <form class="d-flex" role="search"> -->
           <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-          <button class="btn btn-outline-light" type="submit">Login</button>
+          <button class="btn btn-outline-dark" type="submit">Login</button>
         <!-- </form> -->
       </div>
     </div>
@@ -220,24 +220,42 @@
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      <div class="col-lg-4 text-start text-secondary">
+        <div class="card text-secondary p-5">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-journals" style="font-size:3rem"></i><br>
+              Introduction</h5>
+            <p class="card-text">We are a sports educational business project, specialized in private and personalized lessons.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+    
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      <div class="col-lg-4 text-start text-secondary">
+        <div class="card text-secondary p-5">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-journals" style="font-size:3rem"></i><br>
+              Origin</h5>
+            <p class="card-text">Natatorial Arises as an alternative project to the regular classes of a swimming school, providing...</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      <div class="col-lg-4 text-start text-secondary">
+        <div class="card text-secondary p-5">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-journals" style="font-size:3rem"></i><br>
+              Mission & Vision</h5>
+            <p class="card-text">Objective to give swimming lessons to people of different ages in a personalized ...</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
       </div><!-- /.col-lg-4 -->
+
     </div><!-- /.row -->
 
     <div class="container my-5">
