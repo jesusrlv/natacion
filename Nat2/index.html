@@ -137,7 +137,7 @@
 
     
 <header data-bs-theme="dark" style="box-shadow: 5px 10px 18px #3d3d3d;">
-  <nav class="navscroll navbar navbar-expand-md  fixed-top shadow-sm">
+  <nav class="navscroll navbar navbar-expand-md fixed-top shadow-sm">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">Carousel</a> -->
       <a href="/" class="navbar-brand">
@@ -221,7 +221,7 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4 text-start text-secondary">
-        <div class="card text-secondary p-5">
+        <div class="card text-secondary p-5 bg-info text-light">
           <div class="card-body">
             <h5 class="card-title">
               <i class="bi bi-journals" style="font-size:3rem"></i><br>
@@ -233,10 +233,10 @@
     
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4 text-start text-secondary">
-        <div class="card text-secondary p-5">
+        <div class="card text-secondary p-5 bg-info text-light">
           <div class="card-body">
             <h5 class="card-title">
-              <i class="bi bi-journals" style="font-size:3rem"></i><br>
+              <i class="bi bi-book" style="font-size:3rem"></i><br>
               Origin</h5>
             <p class="card-text">Natatorial Arises as an alternative project to the regular classes of a swimming school, providing...</p>
             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -245,10 +245,10 @@
 
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4 text-start text-secondary">
-        <div class="card text-secondary p-5">
+        <div class="card text-secondary p-5 bg-info text-light">
           <div class="card-body">
             <h5 class="card-title">
-              <i class="bi bi-journals" style="font-size:3rem"></i><br>
+              <i class="bi bi-journal-bookmark" style="font-size:3rem"></i><br>
               Mission & Vision</h5>
             <p class="card-text">Objective to give swimming lessons to people of different ages in a personalized ...</p>
             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -258,27 +258,87 @@
 
     </div><!-- /.row -->
 
-    <div class="container my-5">
-      <div class="p-5 text-center bg-body-tertiary rounded-3">
-        <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
-        <h1 class="text-body-emphasis">Jumbotron with icon</h1>
-        <p class="col-lg-8 mx-auto fs-5 text-muted">
-          This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+    <div class="container my-5" >
+      <div class="p-5 text-center bg-body-tertiary rounded-3" id="learning">
+        <!-- <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg> -->
+        <img src="img/natatorial_logo.png" width="100" alt="" class="text-center mt-4 mb-3">
+        <h1 class="" id="textoColor">Learning program</h1>
+        <p class="col-lg-8 mx-auto fs-5" id="textoColor">
+          Based on a personalized pedagogical method using a comprehensive analytical system exploiting the best areas of each student to impart faster teaching processes, with a high degree of technical quality, fun and varied.
         </p>
         <div class="d-inline-flex gap-2 mb-5">
-          <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
-            Call to action
-            <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg>
-          </button>
-          <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
-            Secondary link
-          </button>
+          
         </div>
       </div>
     </div>
 
     <!-- START THE FEATURETTES -->
 
+    <hr class="featurette-divider">
+    <!-- cost -->
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom">Cost</h2>
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cost -->
     <hr class="featurette-divider">
 
     <div class="row featurette">
@@ -337,69 +397,6 @@
     </div>
 
   </div><!-- /.container -->
-
-  <div class="container px-4 py-5" id="icon-grid">
-    <h2 class="pb-2 border-bottom">Icon grid</h2>
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- FOOTER -->
   <div class="container">
