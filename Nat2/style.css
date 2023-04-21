@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&display=swap');
 body{
     font-family: 'Mulish', sans-serif;
+    background-image: url('img/back2.jpg');
+    background-size: 100%;
+    background-attachment: fixed; 
+
 }
 
 #imagenCarousel{
@@ -56,10 +60,10 @@ body{
   }
 
   .nav-link{
-    color: #ffffff;
+    color: #004e7b;
   }
   .nav-link.azul{
-    color: #000000;
+    color: #d7d5d5;
   }
   .navscroll {
     background-color: #0dcaf0;
@@ -69,9 +73,12 @@ body{
 }
 
 .navscroll.azul {
-    background-color:rgba(207, 231, 233, 0.7);
+    background-color:rgba(58, 142, 178);
     color:white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0px 4px 4px rgba(0,0,0,.2);
+}
+.nav-link.azul {
+    color:white;
 }
 
 .navbar-toggler{

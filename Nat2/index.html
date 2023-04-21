@@ -99,11 +99,11 @@
 
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
       <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
       <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
-    </svg>
+    </svg> -->
 
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
@@ -141,8 +141,8 @@
     </div>
 
     
-<header data-bs-theme="dark" style="box-shadow: 5px 10px 18px #3d3d3d;">
-  <nav class="navscroll navbar navbar-expand-md fixed-top shadow-sm">
+<header data-bs-theme="dark" class="justify-content-center" style="box-shadow: 5px 10px 18px #3d3d3d;">
+  <nav class="navscroll navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">Carousel</a> -->
       <a href="/" class="navbar-brand">
@@ -151,23 +151,29 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="navUno">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color:#004e7b;"><i class="bi bi-house"></i> Home</a>
+            <a class="nav-link" aria-current="page" href="#" ><i class="bi bi-house"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#004e7b;"><i class="bi bi-journal-plus"></i> Schedule</a>
+            <a class="nav-link" href="#"><i class="bi bi-journal-plus"></i> Schedule</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" style="color:#004e7b;"><i class="bi bi-question-circle"></i> About us</a>
+            <a href="#" class="nav-link"><i class="bi bi-question-circle"></i> About us</a>
           </li>
         </ul>
+        <ul class="nav nav-pills" id="navDos">
+        <li class="nav-item"><a href="#" class="nav-link" aria-current="page"><i class="bi bi-house"></i> Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-journal-plus"></i> Schedule</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-question-circle"></i> About us</a></li>
+       
+      </ul>
         <!-- <form class="d-flex" role="search"> -->
           <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-          <button class="btn btn-outline-dark" type="submit">Login</button>
         <!-- </form> -->
       </div>
+      <button class="btn btn-outline-dark" type="submit">Login</button>
     </div>
   </nav>
 </header>
@@ -279,7 +285,7 @@
 
     <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+    <!-- <hr class="featurette-divider"> -->
     <!-- cost -->
     <div class="container my-5" >
       <div class="p-5 text-start rounded-3 bg-warning" id="" style="color:#004e7b;">
@@ -349,8 +355,111 @@
           </div>
         </div>
         
+        
+      </div>
+        <p>
+          <small>
+            <b> NOTE:</b> No refunds are made for cancellations of scheduled appointments
+            <br> Levels: all courses are taught for beginner, intermediate and advanced students
+         </small>
+        </p>
+        
+         
       </div>
       </div>
+    </div>
+    <!-- cost -->
+    <!-- cost -->
+    <div class="container my-5" >
+      <div class="p-5 text-start rounded-3 bg-warning" id="" style="color:#004e7b;">
+    <!-- <div class="container px-4 py-5" id="icon-grid"> -->
+      <h2 class="pb-2 border-bottom">Cost | Module 2</h2>
+      <p>
+        <small>Fill out our forms to register on our portal, it is necessary to be able to schedule a class. Student and parent personal data fill-in form</small>
+        <ul>
+          <li>Name</li>
+            <li>Surnames</li>
+            <li>Address</li>
+            <li>Contact Telephone 1 and 2</li>
+            <li>Facebook</li>
+            <li>Relatives Authorized to pick up the student</li>
+            <li>Tutor person 1 Name and Telephone</li>
+            <li>Guardian person 2 Name and Telephone</li>
+        </ul>
+      </p>
+      <p><small>Legal Terms (Contract and Service Agreements)</small></p>
+      <ul>
+        <li>Commitment letter (Jeorge)</li>
+        <li>Regulation (George)</li>
+        <li>Terms and Conditions (George)</li>
+          
+      </ul>
+  <!--
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">A.</h3>
+            <p>Cost for one hour $60 USD.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">B.</h3>
+            <p>Cost for 30 min $30 USD</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">C.</h3>
+            <p>Cost for 10 horas $ 300 USD (endurance).</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">D.</h3>
+            <p>D.	Cost for 15 lessons $400 USD</p>
+          </div>
+        </div>
+        
+      </div> -->
+      <!-- <h2 class="pb-2 border-bottom">Courses</h2>
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">A.</h3>
+            <p>Survival technique and beginners (30 minutes).</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">B.</h3>
+            <p>Defining brazing techniques and styles (30 minutes).</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">C.</h3>
+            <p>Preparation of swimming teams.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-coin flex-shrink-0 me-3" width="1.75em" height="1.75em"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">D.</h3>
+            <p>Technique resistance and speed.</p>
+          </div>
+        </div>
+        
+      </div> -->
+      
       </div>
     </div>
     <!-- cost -->
